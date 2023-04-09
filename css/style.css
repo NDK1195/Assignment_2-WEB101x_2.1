@@ -8,6 +8,9 @@ body {
   font-family: 'Open Sans', sans-serif;
   line-height: 1.5;
 }
+ul {
+  list-style: none;
+}
 /* UTILITIES CSS */
 .bg-grey {
   background: #f7f7f7;
@@ -81,7 +84,6 @@ section > .container {
   font-weight: 300;
 }
 /* ABOUT SECTION */
-
 .about-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -97,7 +99,6 @@ section > .container {
   padding: 100px 50px;
 }
 .info {
-  list-style: none;
   opacity: 0.7;
 }
 .info li {
@@ -109,4 +110,67 @@ section > .container {
 }
 .icon-socials-list {
   margin-top: 30px;
+}
+/* JOB INFO SECTION */
+#job-info {
+  margin: 30px 0;
+}
+.job-info-box {
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  padding: 40px;
+}
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 400px;
+  gap: 20px;
+}
+.job-info-header {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+.job-info-header i {
+  font-size: 50px;
+}
+.info-title-list {
+  text-align: justify;
+}
+.info-title-list > li {
+  margin-bottom: 30px;
+}
+.info-title-list > li::before {
+  content: ' ';
+  background-color: rgb(0, 174, 255);
+  border-radius: 50%;
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 10px;
+}
+.info-title {
+  font-weight: 600;
+}
+.text-timeline {
+  font-style: italic;
+  font-size: 14px;
+  margin-left: 25px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.text-highlight {
+  background-color: rgb(0, 174, 255);
+  border-radius: 10px;
+  color: #fff;
+  padding: 2px 10px;
+}
+.info-details li {
+  padding-left: 25px;
+  margin-bottom: 5px;
+}
+.info-details li::before {
+  content: '-';
+  display: inline-block;
+  margin-right: 3px;
 }
